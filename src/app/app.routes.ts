@@ -1,17 +1,23 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HomeComponent } from './portfolio-Website/home/home.component';
+import { AboutComponent } from './portfolio-Website/about/about.component';
+import { PortfolioComponent } from './portfolio-Website/portfolio/portfolio.component';
 
-import { ContactComponent } from './contact/contact.component';
-import { BannerComponent } from './banner/banner.component';
-import { SkillComponent } from './skill/skill.component';
+import { ContactComponent } from './portfolio-Website/contact/contact.component';
+import { BannerComponent } from './portfolio-Website/banner/banner.component';
+import { SkillComponent } from './portfolio-Website/skill/skill.component';
+import { TestComponent } from './test/test.component';
 
 export const routes: Routes = [
-  { path: '', title: 'Home', component: HomeComponent },
+  {
+    path: 'portfolio-website',
+    title: 'Portfolio Website',
+    component: HomeComponent,
+  },
   { path: 'about', title: 'About', component: AboutComponent },
   { path: 'portfolio', title: 'Portfolio', component: PortfolioComponent },
   { path: 'contact', title: 'Contact', component: ContactComponent },
   { path: 'banner', title: 'Banner', component: BannerComponent },
   { path: 'skill', title: 'Skill', component: SkillComponent },
+  { path: 'test', title: 'Test', component: TestComponent },
 ];

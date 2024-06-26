@@ -5,6 +5,7 @@ import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { SkillComponent } from '../skill/skill.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ import { SkillComponent } from '../skill/skill.component';
     ContactComponent,
     PortfolioComponent,
     SkillComponent,
+    NavbarComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
