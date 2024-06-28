@@ -7,6 +7,7 @@ import { ContactComponent } from './portfolio-Website/contact/contact.component'
 import { BannerComponent } from './portfolio-Website/banner/banner.component';
 import { SkillComponent } from './portfolio-Website/skill/skill.component';
 import { TestComponent } from './test/test.component';
+import { FurnitureHomeComponent } from './furniture-store/furniture-home/furniture-home.component';
 
 export const routes: Routes = [
   {
@@ -20,4 +21,9 @@ export const routes: Routes = [
   { path: 'banner', title: 'Banner', component: BannerComponent },
   { path: 'skill', title: 'Skill', component: SkillComponent },
   { path: 'test', title: 'Test', component: TestComponent },
+  {
+    path: 'furniture-store',
+    title: 'Furniture Store',
+    component: FurnitureHomeComponent,
+  },
 ];
