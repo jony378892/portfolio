@@ -1,0 +1,303 @@
+<div class="container flex mx-auto mt-10 gap-4 text-sm">
+  <div class="flex flex-col w-2/3 gap-4">
+    <div
+      class="flex flex-col rounded-lg px-5 py-7 shadow-lg bg-white gap-2 border border-gray-100"
+    >
+      <p>Deliver to : {{ customerName }}</p>
+      <div class="flex divide divide-x gap-3">
+        <div class="gap-2 flex">
+          <button
+            type="button"
+            class="bg-green-100 rounded-sm px-1 text-xs text-center text-green-600 border border-green-400"
+          >
+            Home
+          </button>
+          <p class="taxt-sm">+88016583653</p>
+        </div>
+        <div class="flex gap-2 pl-3">
+          <p>Makki Masjid Street, Rampura Bus Stand, Dhaka - North, Dhaka</p>
+          <a href="" class="text-green-500">Change</a>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <p>Bill to the same address</p>
+        <a href="#" class="text-green-500 cursor-pointer">Edit</a>
+      </div>
+      <div class="flex gap-4">
+        <p>Email to</p>
+        <p>Example&#64;gmail.com</p>
+        <a href="" class="text-green-500 cursor-pointer">Edit</a>
+      </div>
+    </div>
+    <div class="flex flex-col px-5 py-7 gap-4 bg-white rounded-lg shadow-lg">
+      <div class="flex gap-3 font-medium">
+        <div
+          class="flex text-white bg-green-500 px-1 -py-0.5 rounded-sm text-center text-xs"
+        >
+          Mart
+        </div>
+        <p>Daraz Mart</p>
+      </div>
+      <div class="flex flex-col gap-7 pb-4">
+        <div class="flex items-center">
+          <div class="flex gap-3 w-7/12">
+            <img src="/public/assets/img_01.jpeg" alt="" class="w-14 h-auto" />
+            <div class="flex flex-col">
+              <p class="line-clamp-1 pr-5">{{ product1 }}</p>
+              <p class="text-xs font-semibold">
+                {{ product1Brand }}, {{ product1Category }}
+              </p>
+              <div class="flex gap-2 mt-2">
+                <div
+                  class="flex text-[9px] border border-gray-300 text-green-500 rounded-sm px-1 text-medium h-4 items-center font-bold"
+                >
+                  <p class="pb-0.5">Verified</p>
+                </div>
+                <div
+                  class="flex text-[9px] border border-gray-300 text-green-500 rounded-sm px-1 text-medium h-4 items-center font-bold"
+                >
+                  <p class="pb-0.5">Best price</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-5/12 items-center">
+            <div class="flex justify-between w-1/3">
+              <p>Qty: {{ productQty1 }}</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 cursor-pointer"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+            </div>
+
+            <div class="flex w-2/3 justify-end gap-4">
+              <div
+                class="flex gap-1 px-1 text-xs bg-gray-100 rounded-sm text-gray-500 items-center"
+              >
+                <p class="line-through">Tk 195</p>
+                <p>-14%</p>
+              </div>
+              <p class="font-medium">Tk {{ productPrice1 }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-3 w-7/12">
+            <img src="/public/assets/img_01.jpeg" alt="" class="w-14 h-auto" />
+            <div class="flex flex-col">
+              <p class="line-clamp-1 pr-5">{{ product2 }}</p>
+              <p class="text-xs font-semibold">
+                {{ product2Brand }}, {{ product2Category }}
+              </p>
+              <div class="flex gap-2 mt-2">
+                <div
+                  class="flex text-[9px] border border-gray-300 text-green-500 rounded-sm px-1 text-medium h-4 items-center font-bold"
+                >
+                  <p class="pb-0.5">Verified</p>
+                </div>
+                <div
+                  class="flex text-[9px] border border-gray-300 text-green-500 rounded-sm px-1 text-medium h-4 items-center font-bold"
+                >
+                  <p class="pb-0.5">Best price</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-5/12 items-center">
+            <div class="flex justify-between w-1/3">
+              <p>Qty: {{ productQty2 }}</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 cursor-pointer"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+            </div>
+
+            <div class="flex w-2/3 justify-end gap-4">
+              <div
+                class="flex gap-1 px-1 text-xs bg-gray-100 rounded-sm text-gray-500 items-center"
+              >
+                <p class="line-through">Tk 195</p>
+                <p>-14%</p>
+              </div>
+              <p class="font-medium">Tk {{ productPrice2 }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-3 w-7/12">
+            <img src="/public/assets/img_01.jpeg" alt="" class="w-14 h-auto" />
+            <div class="flex flex-col">
+              <p class="line-clamp-1 pr-5">{{ product3 }}</p>
+              <p class="text-xs font-semibold">
+                {{ product3Brand }}, {{ product3Category }}
+              </p>
+              <div class="flex gap-2 mt-2">
+                <div
+                  class="flex text-[9px] border border-gray-300 text-green-500 rounded-sm px-1 text-medium h-4 items-center font-bold"
+                >
+                  <p class="pb-0.5">Verified</p>
+                </div>
+                <div
+                  class="flex text-[9px] border border-gray-300 text-green-500 rounded-sm px-1 text-medium h-4 items-center font-bold"
+                >
+                  <p class="pb-0.5">Best price</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-5/12 items-center">
+            <div class="flex justify-between w-1/3">
+              <p>Qty: {{ productQty3 }}</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 cursor-pointer"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+            </div>
+
+            <div class="flex w-2/3 justify-end gap-4">
+              <div
+                class="flex gap-1 px-1 text-xs bg-gray-100 rounded-sm text-gray-500 items-center"
+              >
+                <p class="line-through">Tk 195</p>
+                <p>-14%</p>
+              </div>
+              <p class="font-medium">Tk {{ productPrice3 }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="pb-4" />
+      <div class="flex justify-between items-center w-full">
+        <div
+          class="flex flex-col gap-1 border border-green-400/80 rounded-lg py-2 px-3 justify-center items-center shadow-sm z-50"
+        >
+          <div
+            class="flex gap-3 text-green-600 text-sm font-medium divide-green-500 divide-x"
+          >
+            <p>Standard Delivery</p>
+            <p class="pl-3">Tk {{ deliveryCharge }}</p>
+          </div>
+          <div class="flex gap-3 text-xs">
+            <p>Received By 3 June to 7 June</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-end items-end gap-2">
+          <div class="flex gap-2 font-semibold">
+            <p>{{ totalItems }} item(s).</p>
+            <p>Subtotal: Tk {{ TotalPrice }}</p>
+          </div>
+          <p class="text-gray-600">Saved Tk 00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="w-1/3 px-5 py-7 shadow-lg bg-white h-fit rounded-lg border border-gray-100"
+  >
+    <p class="font-medium mb-5">Discount and payment</p>
+    <div class="flex flex-col gap-5">
+      <div class="flex justify-between">
+        <div class="flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 stroke-green-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"
+            />
+          </svg>
+          <p>Shipper Voucher</p>
+        </div>
+        <p>No Applicable Voucher</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 stroke-green-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z"
+            />
+          </svg>
+
+          <p>Promo Code</p>
+        </div>
+        <input
+          type="text"
+          Placeholder="Shipper Code"
+          class="px-2 py-1 rounded-sm border border-gray-400"
+        />
+      </div>
+      <hr class="pb-3" />
+      <div class="flex flex-col gap-3">
+        <p class="font-medium">Order Summary</p>
+        <div class="flex items-center justify-between">
+          <p>Items Total</p>
+          <p class="font-semibold text-base">Tk {{ TotalPrice }}</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <p>Delivery Fee</p>
+          <p class="font-semibold text-base">Tk {{ deliveryCharge }}</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <p>Total Payment</p>
+          <p class="font-semibold text-base">Tk {{ totalPriceWithDelivery }}</p>
+        </div>
+        <div class="flex justify-end items-end">
+          <p class="text-gray-500 font-normal">
+            VAT included, where applicable
+          </p>
+        </div>
+        <button
+          type="button"
+          class="bg-green-500 text-white py-2 rounded-md font-semibold text-base"
+        >
+          Place Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

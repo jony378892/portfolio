@@ -13,6 +13,9 @@ import { HotelComponent } from './hotel-booking/hotel/hotel.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { InteriorComponent } from './interior/interior.component';
 import { HouseComponent } from './house/house.component';
+import { ProductPageComponent } from './product-page/product-page.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 export const routes: Routes = [
   { path: '', title: 'Home', component: MyWorkComponent },
@@ -35,4 +38,7 @@ export const routes: Routes = [
   { path: 'hotel', title: 'Hotel Booking ', component: HotelComponent },
   { path: 'interior', title: 'Interior Home', component: InteriorComponent },
   { path: 'house', title: 'House', component: HouseComponent },
+  {path:  'product-page', title: 'Product Page', component: ProductPageComponent},
+  {path: 'cart', title: 'Cart', component: CartComponent},
+  {path: 'checkout', title: 'Checkout',  component: CheckoutComponent},
 ];
