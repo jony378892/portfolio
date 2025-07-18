@@ -6,6 +6,7 @@ import {
   House,
   Instagram,
   Linkedin,
+  Mail,
   User,
 } from "lucide-react";
 import React from "react";
@@ -39,7 +40,7 @@ function Sidebar({ hidden, setHidden }) {
         hidden
           ? "hidden sm:inline-flex"
           : "absolute inset-y-0 top-0 z-10 sm:inline-flex"
-      } flex flex-col bg-[#0d0d0d] w-52 sm:min-w-52 md:min-w-72 h-screen p-2 justify-between`}
+      } flex flex-col bg-[#0d0d0d] w-52 min-w-52 md:min-w-72 h-screen p-2 justify-between`}
     >
       <div className="flex-1">
         <img
@@ -86,7 +87,7 @@ function Sidebar({ hidden, setHidden }) {
         </div>
       </div>
       <footer className="flex gap-2 justify-center mb-4">
-        <Instagram className="hover:bg-white/20 rounded-md p-2 size-9" />
+        <Mail className="hover:bg-white/20 rounded-md p-2 size-9" />
         <Github className="hover:bg-white/20 rounded-md p-2 size-9" />
         <Linkedin className="hover:bg-white/20 rounded-md p-2 size-9" />
       </footer>

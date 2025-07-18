@@ -14,7 +14,7 @@ import npm from "../assets/npm.png";
 function CustomCard({ src, name }) {
   return (
     <div
-      className={`flex flex-col gap-3 items-center justify-center rounded-lg border border-white bg-[#0d0d0d] shadow-lg shadow-gray-800 hover:shadow-gray-700 p-6`}
+      className={`flex flex-col gap-3 items-center justify-center rounded-lg border border-white bg-[#0d0d0d] shadow-lg shadow-gray-800 hover:shadow-gray-700 hover:bg-black p-6`}
     >
       <img src={src} alt={name} className="h-10 w-auto" />
       <p className="text-sm">{name} </p>
@@ -24,11 +24,11 @@ function CustomCard({ src, name }) {
 
 function Skills() {
   return (
-    <section className="flex flex-col px-5 mt-10 max-w-3xl xl:max-w-5xl mx-auto text-sm md:text-lg xl:text-xl">
-      <h1 className="text-4xl md:text-5xl mb-16 underline underline-offset-8 decoration-4 font-semibold mx-auto text-center">
+    <section className="flex flex-col px-5 my-10 max-w-3xl xl:max-w-5xl mx-auto text-sm md:text-lg xl:text-xl">
+      <h1 className="text-4xl md:text-5xl mb-10 md:mb-16 underline underline-offset-8 decoration-4 font-semibold mx-auto text-center">
         Skills
       </h1>
-      <section className="grid grid-cols-3 lg:grid-cols-4 gap-10 justify-center mt-14 mx-auto">
+      <section className="grid grid-cols-3 lg:grid-cols-4 gap-10 justify-center mt-10 mx-auto">
         <CustomCard src={react} name="react" />
         <CustomCard src={nextjs} name="nextjs" />
         <CustomCard src={typescript} name="typescript" />

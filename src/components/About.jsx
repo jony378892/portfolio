@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section className="flex flex-col gap-8 px-5 mt-20 max-w-3xl xl:max-w-5xl mx-auto text-sm md:text-base xl:text-xl">
+    <section className="flex flex-col gap-8 px-5 mt-10 lg:mt-20 max-w-3xl xl:max-w-5xl mx-auto text-sm md:text-base xl:text-xl">
       <h1 className="text-4xl md:text-5xl mb-16 underline underline-offset-8 decoration-4 font-semibold mx-auto">
         About Me
       </h1>

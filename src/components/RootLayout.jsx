@@ -24,7 +24,7 @@ function RootLayout() {
           onClick={handleClick}
         />
       )}
-      <section className="bg-black h-screen w-full pt-10 ">
+      <section className="bg-black h-screen w-full pt-10 overflow-scroll">
         <Outlet />
       </section>
     </main>
