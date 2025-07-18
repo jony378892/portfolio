@@ -2,11 +2,10 @@ import {
   BicepsFlexed,
   CodeXml,
   Github,
-  Headset,
   House,
-  Instagram,
   Linkedin,
   Mail,
+  Phone,
   User,
 } from "lucide-react";
 import React from "react";
@@ -79,7 +78,7 @@ function Sidebar({ hidden, setHidden }) {
           </CustomLink>
           <CustomLink
             to={"/contact"}
-            icon={<Headset className="size-5" />}
+            icon={<Phone className="size-5" />}
             handleClick={handleClick}
           >
             Contact

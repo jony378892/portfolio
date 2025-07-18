@@ -4,6 +4,7 @@ import L from "leaflet";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 // Fix Leaflet's icon paths
 delete L.Icon.Default.prototype._getIconUrl;
@@ -17,25 +18,62 @@ L.Icon.Default.mergeOptions({
 function MapView() {
   return (
     <MapContainer
-      center={[23.8103, 90.4125]}
+      center={[24.012668149207197, 90.32292031756714]}
       zoom={13}
-      className="h-full w-full rounded-b-lg xl:rounded-b-none xl:rounded-r-lg rounded-xl"
+      className="h-[280px] w-full rounded-xl"
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-      <Marker position={[23.8103, 90.4125]}>
+      <Marker position={[24.012668149207197, 90.32292031756714]}>
         <Popup>Hello from Dhaka!</Popup>
       </Marker>
     </MapContainer>
   );
 }
 
+// PersonalDetails Component
+
+function PersonalDetails() {
+  return (
+    <div className="bg-black/30 backdrop-blur-lg rounded-xl p-6 flex flex-col gap-5 border border-white/10 shadow-md">
+      <h3 className="text-xl font-semibold mb-2 text-white">Contact Details</h3>
+      <div className="flex items-center gap-3">
+        <span className="bg-white/10 p-2 rounded-full">
+          <MapPin size={20} className="text-gray-200" />
+        </span>
+        <div>
+          <p className="text-sm text-white/70">Location</p>
+          <p className="text-sm text-white">Gazipur Sadar, Gazipur</p>
+        </div>
+      </div>
+      <div className="flex items-center gap-3">
+        <span className="bg-white/10 p-2 rounded-full">
+          <Phone size={20} className="text-gray-200" />
+        </span>
+        <div>
+          <p className="text-sm text-white/70">Phone</p>
+          <p className="text-sm text-white">01521575254</p>
+        </div>
+      </div>
+      <div className="flex items-center gap-3">
+        <span className="bg-white/10 p-2 rounded-full">
+          <Mail size={20} className="text-gray-200" />
+        </span>
+        <div>
+          <p className="text-sm text-white/70">Email</p>
+          <p className="text-sm text-white">jony378892@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Contact Page
 function Contact() {
   return (
-    <section className="px-5 mt-10 max-w-6xl mx-auto text-base xl:text-lg text-white">
+    <section className="px-5 my-10 max-w-6xl mx-auto text-base xl:text-lg text-white">
       <h2 className="text-4xl md:text-5xl font-semibold text-center">
         Get in Touch
       </h2>
@@ -44,9 +82,9 @@ function Contact() {
         connect — feel free to reach out.
       </p>
 
-      <div className="mt-10 flex flex-col xl:flex-row rounded-xl shadow-lg overflow-hidden border border-white/20">
+      <div className="mt-10 flex flex-col xl:flex-row gap-10 rounded-xl shadow-lg overflow-hidden border border-white/20 px-5 py-10">
         {/* Form Section */}
-        <form className="w-full xl:w-1/2 bg-black/30 backdrop-blur-lg p-8 flex flex-col gap-6 text-sm">
+        <form className="w-full xl:w-1/2 border-white/20 bg-black/30 backdrop-blur-lg flex flex-col gap-6 text-sm">
           <h3 className="text-xl font-medium mb-2">
             Let's build something great.
           </h3>
@@ -59,7 +97,7 @@ function Contact() {
               type="text"
               id="name"
               placeholder="John Doe"
-              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none"
             />
           </div>
 
@@ -71,7 +109,7 @@ function Contact() {
               type="email"
               id="email"
               placeholder="you@example.com"
-              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none"
             />
           </div>
 
@@ -83,7 +121,7 @@ function Contact() {
               type="text"
               id="company"
               placeholder="Your Company"
-              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none"
             />
           </div>
 
@@ -95,7 +133,7 @@ function Contact() {
               id="message"
               rows={5}
               placeholder="Type your message here..."
-              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white resize-none"
+              className="px-3 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none resize-none"
             ></textarea>
           </div>
 
@@ -108,8 +146,9 @@ function Contact() {
         </form>
 
         {/* Map Section */}
-        <div className="w-full xl:w-1/2 h-[450px] xl:h-auto p-5 rounded-xl">
+        <div className="w-full xl:w-1/2  flex flex-col justify-between gap-5 ">
           <MapView />
+          <PersonalDetails />
         </div>
       </div>
     </section>

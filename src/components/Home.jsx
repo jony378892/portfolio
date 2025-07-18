@@ -1,6 +1,6 @@
-import Button from "./Button";
+import { Link } from "react-router";
 
-import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 function Home() {
   const [text] = useTypewriter({
@@ -21,12 +21,21 @@ function Home() {
       </div>
 
       <p className="lg:text-lg">
-        Building sleek websites that capture minds and hearts of others. Yes, I
-        center things with <em>Flexbox</em>. Yes, I'm proud of it.
+        Building sleek, modern websites with clean design, smooth interactions,
+        and purposeful layout. Yes, I center things with Flexbox. Yes, I’m proud
+        of it—because every detail matters.
       </p>
       <div className="flex gap-3 sm:gap-6 lg:text-lg">
-        <Button to={"/projects"}>Resume</Button>
-        <Button to={"/resume"}>Download Resume</Button>
+        <Link to="/projects">
+          <button className="px-5 sm:px-8 py-2 border border-gray-200 text-white rounded-md cursor-pointer">
+            Resume
+          </button>
+        </Link>
+        <Link to="/resume">
+          <button className="px-5 sm:px-8 py-2 border border-gray-200 text-white rounded-md cursor-pointer">
+            Download Resume
+          </button>
+        </Link>
       </div>
     </section>
   );

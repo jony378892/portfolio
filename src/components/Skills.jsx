@@ -1,15 +1,15 @@
-import react from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import tailwindcss from "../assets/tailwindcss.png";
-import typescript from "../assets/typescript.png";
-import javascript from "../assets/javascript.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import mongodb from "../assets/mongodb.png";
-import node from "../assets/node.png";
-import firebase from "../assets/firebase.png";
-import jwt from "../assets/jwt.png";
-import npm from "../assets/npm.png";
+import react from "../assets/images/react.png";
+import nextjs from "../assets/images/nextjs.png";
+import tailwindcss from "../assets/images/tailwindcss.png";
+import typescript from "../assets/images/typescript.png";
+import javascript from "../assets/images/javascript.png";
+import html from "../assets/images/html.png";
+import css from "../assets/images/css.png";
+import mongodb from "../assets/images/mongodb.png";
+import node from "../assets/images/node.png";
+import firebase from "../assets/images/firebase.png";
+import jwt from "../assets/images/jwt.png";
+import npm from "../assets/images/npm.png";
 
 function CustomCard({ src, name }) {
   return (
@@ -24,11 +24,11 @@ function CustomCard({ src, name }) {
 
 function Skills() {
   return (
-    <section className="flex flex-col px-5 my-10 max-w-3xl xl:max-w-5xl mx-auto text-sm md:text-lg xl:text-xl">
-      <h1 className="text-4xl md:text-5xl mb-10 md:mb-16 underline underline-offset-8 decoration-4 font-semibold mx-auto text-center">
+    <section className="flex flex-col px-5 mt-20 mb-10 max-w-3xl mx-auto text-sm md:text-lg xl:text-xl">
+      <h1 className="text-4xl mb-10 md:mb-16 underline underline-offset-8 decoration-4 font-semibold mx-auto text-center">
         Skills
       </h1>
-      <section className="grid grid-cols-3 lg:grid-cols-4 gap-10 justify-center mt-10 mx-auto">
+      <section className="grid grid-cols-3 lg:grid-cols-4 gap-10 justify-center mt-5 mx-auto">
         <CustomCard src={react} name="react" />
         <CustomCard src={nextjs} name="nextjs" />
         <CustomCard src={typescript} name="typescript" />
