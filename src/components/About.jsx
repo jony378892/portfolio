@@ -1,17 +1,14 @@
-import React from "react";
-
 function About() {
   return (
-    <section className="flex flex-col gap-8 px-8 mt-10 lg:mt-20 max-w-3xl xl:max-w-5xl mx-auto text-sm md:text-base leading-7">
-      <h1 className="text-4xl mb-16 underline underline-offset-8 decoration-4 font-semibold mx-auto">
+    <section className="flex flex-col gap-8 px-5 lg:px-0 mt-16 lg:mt-20 max-w-4xl xl:max-w-5xl mx-auto text-sm md:text-base leading-7">
+      <h1 className="text-4xl mb-10 underline underline-offset-8 decoration-4 font-semibold mx-auto text-balance">
         About Me
       </h1>
       <p>
-        Hi, I'm Jony Kanti Das, and I'm a passinate web developer with a strong
-        passion for learning and creating user-friendly websites and
-        applications. I started coding a while ago, and since then, I've enjoyed
-        the process of solving problems and seeing my ideas come to life through
-        code.
+        I'm a passinate fullstack developer with a strong passion for learning
+        and creating user-friendly websites and applications. I started coding a
+        while ago, and since then, I've enjoyed the process of solving problems
+        and seeing my ideas come to life through code.
       </p>
       <p>
         I'm comfortable working with technologies like{" "}

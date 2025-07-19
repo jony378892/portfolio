@@ -1,24 +1,17 @@
 import "./App.css";
 
+import Projects from "./components/Projects";
 import { BrowserRouter, Route, Routes } from "react-router";
 import RootLayout from "./components/RootLayout";
-
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Project from "./components/Project";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<RootLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+        <Route index element={<RootLayout />} />
+        <Route path="projects" element={<Projects />}>
+          <Route path=":id" element={<Project />} />
         </Route>
       </Routes>
     </BrowserRouter>

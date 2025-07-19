@@ -1,1 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 450px;
+
+  --font-inter: "Inter", sans-serif;
+  --font-ptsans: "PT Sans", sans-serif;
+
+  --color-primary: #4682a9;
+  --color-secondary: #749bc2;
+  --color-normal: #91c8e4;
+  --color-background: #fffbde;
+}

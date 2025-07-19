@@ -73,18 +73,16 @@ function PersonalDetails() {
 // Contact Page
 function Contact() {
   return (
-    <section className="px-5 my-10 max-w-6xl mx-auto text-base xl:text-lg text-white">
-      <h2 className="text-4xl md:text-5xl font-semibold text-center">
-        Get in Touch
-      </h2>
+    <section className="w-full max-w-4xl xl:max-w-5xl mx-auto px-5 lg:px-0 pb-10 mt-10 text-base xl:text-lg text-white">
+      <h2 className="text-4xl font-semibold text-center">Get in Touch</h2>
       <p className="mt-4 text-center max-w-xl mx-auto">
         Whether you have a question, want to start a project, or just want to
         connect — feel free to reach out.
       </p>
 
-      <div className="mt-10 flex flex-col xl:flex-row gap-10 rounded-xl shadow-lg overflow-hidden border border-white/20 px-5 py-10">
+      <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-5 rounded-xl shadow-lg overflow-hidden border border-white/20 px-5 py-10">
         {/* Form Section */}
-        <form className="w-full xl:w-1/2 border-white/20 bg-black/30 backdrop-blur-lg flex flex-col gap-6 text-sm">
+        <form className="w-full md:w-1/2  border-white/20 bg-black/30  flex flex-col gap-6 text-sm">
           <h3 className="text-xl font-medium mb-2">
             Let's build something great.
           </h3>
@@ -146,7 +144,7 @@ function Contact() {
         </form>
 
         {/* Map Section */}
-        <div className="w-full xl:w-1/2  flex flex-col justify-between gap-5 ">
+        <div className="w-full md:w-1/2 flex flex-col justify-between gap-5 ">
           <MapView />
           <PersonalDetails />
         </div>
