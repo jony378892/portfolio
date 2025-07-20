@@ -1,5 +1,5 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router";
 
 function Navbar() {
   const location = useLocation();

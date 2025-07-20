@@ -39,7 +39,7 @@ function Home() {
         </div>
 
         <img
-          src="/public/profile.jpeg"
+          src="/profile.jpeg"
           alt=""
           className="h-[400px] sm:w-[250px] md:w-[320px] sm:rotate-3 object-cover rounded-2xl"
         />
