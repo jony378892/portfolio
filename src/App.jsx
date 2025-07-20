@@ -1,5 +1,4 @@
 import "./App.css";
-
 import Projects from "./components/Projects";
 import { BrowserRouter, Route, Routes } from "react-router";
 import RootLayout from "./components/RootLayout";
@@ -10,9 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<RootLayout />} />
-        <Route path="projects" element={<Projects />}>
-          <Route path=":id" element={<Project />} />
-        </Route>
+        <Route path="projects/:id" element={<Project />} />
       </Routes>
     </BrowserRouter>
   );

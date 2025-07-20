@@ -3,15 +3,17 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function RootLayout() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
+    <main className="relative flex flex-col items-center justify-center min-h-screen bg-black text-white pb-20">
       <Home />
       <About />
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 }

@@ -73,7 +73,10 @@ function PersonalDetails() {
 // Contact Page
 function Contact() {
   return (
-    <section className="w-full max-w-4xl xl:max-w-5xl mx-auto px-5 lg:px-0 pb-10 mt-10 text-base xl:text-lg text-white">
+    <section
+      id="contact"
+      className="w-full max-w-4xl xl:max-w-5xl mx-auto px-5 lg:px-0 pb-10 mt-10 text-base xl:text-lg text-white"
+    >
       <h2 className="text-4xl font-semibold text-center">Get in Touch</h2>
       <p className="mt-4 text-center max-w-xl mx-auto">
         Whether you have a question, want to start a project, or just want to
@@ -137,7 +140,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="mt-4 py-3 px-6 bg-white text-black font-semibold rounded-md hover:bg-white/80 transition"
+            className="mt-4 py-3 px-6 bg-primary text-black font-semibold rounded-md hover:bg-primary/80 transition"
           >
             Send Message
           </button>

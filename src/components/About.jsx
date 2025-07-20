@@ -1,6 +1,9 @@
 function About() {
   return (
-    <section className="flex flex-col gap-8 px-5 lg:px-0 mt-16 lg:mt-20 max-w-4xl xl:max-w-5xl mx-auto text-sm md:text-base leading-7">
+    <section
+      id="about"
+      className="flex flex-col gap-8 px-5 lg:px-0 mt-16 lg:mt-20 max-w-4xl xl:max-w-5xl mx-auto text-sm md:text-base leading-7"
+    >
       <h1 className="text-4xl mb-10 underline underline-offset-8 decoration-4 font-semibold mx-auto text-balance">
         About Me
       </h1>
@@ -19,7 +22,7 @@ function About() {
         Express.js, MongoDB and Mongoose and I'm currently diving deeper into
         React to build dynamic, interactive user interfaces. I enjoy working on
         projects that allow me to improve my skills and apply new concepts, and
-        I'm always eager to take on challenges that push me to grow as a
+        I'm always eager to take on challenge that push me to grow as a
         developer.
       </p>
       <p>

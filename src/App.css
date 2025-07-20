@@ -8,8 +8,8 @@
   --font-inter: "Inter", sans-serif;
   --font-ptsans: "PT Sans", sans-serif;
 
-  --color-primary: #4682a9;
+  --color-background: #4682a9;
   --color-secondary: #749bc2;
   --color-normal: #91c8e4;
-  --color-background: #fffbde;
+  --color-primary: var(--color-white);
 }

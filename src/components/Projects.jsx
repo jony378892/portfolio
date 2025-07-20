@@ -1,6 +1,5 @@
+import { Link } from "react-router";
 import { projectsData } from "../assets/data";
-
-const url = import.meta.env.URL;
 
 function Projects() {
   return (
@@ -42,11 +41,11 @@ function Projects() {
                     );
                   })}
                 </div>
-                <a href={`${url}`}>
-                  <button className="w-full py-2 text-sm text-white border border-white/30 rounded-lg mt-5 hover:bg-white hover:text-black cursor-pointer">
+                <Link to={`/projects/${project.id}`}>
+                  <button className="w-full py-2 text-sm text-white border border-white/30 rounded-lg mt-5 hover:bg-primary hover:text-black hover:font-semibold cursor-pointer">
                     View More
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           );

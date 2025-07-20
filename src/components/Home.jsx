@@ -1,6 +1,8 @@
-import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import Navbar from "./Navbar";
-import { ArrowUpRight } from "lucide-react";
+import githubLogo from "../assets/images/github-mark-white.png";
+import linkedinLogo from "../assets/images/icons8-linkedin-48.png";
+import { Link } from "react-router";
 
 function Home() {
   const [text] = useTypewriter({
@@ -10,7 +12,7 @@ function Home() {
   });
 
   return (
-    <header className="w-full">
+    <header id="home" className="w-full">
       <Navbar />
       <section className="w-full max-w-4xl xl:max-w-5xl mx-auto mt-44 px-5 lg:px-0 flex flex-col sm:flex-row justify-between gap-8 sm:gap-5">
         <div>
@@ -23,11 +25,16 @@ function Home() {
             accessible and user friendly website.
           </p>
 
-          <div className="flex items-center gap-3">
-            <button className="flex items-center gap-2 bg-[#d9b891] px-4 py-1.5 text-black rounded-full font-semibold mt-7">
-              CONTACT ME{" "}
-              <ArrowUpRight className="bg-black rounded-full box-content p-2.5 -mr-2 text-white self-end" />
+          <div className="flex gap-5 mt-8 items-center">
+            <button className="flex items-center gap-2 bg-primary px-6 py-2 text-black rounded-lg font-semibold text-lg cursor-pointer">
+              Resume{" "}
             </button>
+            <Link to="https://github.com/jony378892" target="_blank">
+              <img src={githubLogo} alt="github" className="w-7 h-auto" />
+            </Link>
+            <Link to="https://www.linkedin.com/in/jony-dev" target="_blank">
+              <img src={linkedinLogo} alt="github" className="w-9 h-auto" />
+            </Link>
           </div>
         </div>
 

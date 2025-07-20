@@ -18,10 +18,10 @@ export const projectsData = [
       "React Router",
       "JWT",
     ],
-    challenges:
-      "Integrating secure user authentication with JWT and managing protected routes required careful planning. Structuring the product data model in MongoDB for scalable category and inventory handling was also challenging. Handling image uploads and optimizing the UI for responsiveness across devices involved multiple iterations.",
+    challenge:
+      "Building a robust authentication system with JWT and handling user sessions securely was complex. Ensuring the UI remained responsive and intuitive across all device sizes required multiple design iterations.",
     future_improvement:
-      "Add a user-friendly admin dashboard for product and order management. Implement advanced filtering and search features. Integrate a secure payment gateway. Add product reviews, wishlists, and better image optimization (e.g., lazy loading). Improve performance with pagination and use of caching strategies (e.g., Redis).",
+      "Integrate real-time order tracking and notifications. Add multi-language support and implement AI-powered product recommendations.",
   },
   {
     id: 2,
@@ -40,10 +40,10 @@ export const projectsData = [
       "React Router",
       "JWT",
     ],
-    challenges:
-      "Integrating secure user authentication with JWT and managing protected routes required careful planning. Structuring the product data model in MongoDB for scalable category and inventory handling was also challenging. Handling image uploads and optimizing the UI for responsiveness across devices involved multiple iterations.",
+    challenge:
+      "Optimizing database queries for fast product searches and filtering was a major challenge. Managing concurrent inventory updates and preventing race conditions required careful backend logic.",
     future_improvement:
-      "Add a user-friendly admin dashboard for product and order management. Implement advanced filtering and search features. Integrate a secure payment gateway. Add product reviews, wishlists, and better image optimization (e.g., lazy loading). Improve performance with pagination and use of caching strategies (e.g., Redis).",
+      "Introduce automated inventory restocking alerts. Add analytics dashboard for sales and user engagement insights.",
   },
   {
     id: 3,
@@ -62,10 +62,10 @@ export const projectsData = [
       "React Router",
       "JWT",
     ],
-    challenges:
-      "Integrating secure user authentication with JWT and managing protected routes required careful planning. Structuring the product data model in MongoDB for scalable category and inventory handling was also challenging. Handling image uploads and optimizing the UI for responsiveness across devices involved multiple iterations.",
+    challenge:
+      "Implementing secure image uploads and storage, while keeping the site performant, was tricky. Handling edge cases in the checkout flow and payment integration required extensive testing.",
     future_improvement:
-      "Add a user-friendly admin dashboard for product and order management. Implement advanced filtering and search features. Integrate a secure payment gateway. Add product reviews, wishlists, and better image optimization (e.g., lazy loading). Improve performance with pagination and use of caching strategies (e.g., Redis).",
+      "Enable guest checkout and social login options. Add support for multiple currencies and regional shipping rates.",
   },
   {
     id: 4,
@@ -84,9 +84,9 @@ export const projectsData = [
       "React Router",
       "JWT",
     ],
-    challenges:
-      "Integrating secure user authentication with JWT and managing protected routes required careful planning. Structuring the product data model in MongoDB for scalable category and inventory handling was also challenging. Handling image uploads and optimizing the UI for responsiveness across devices involved multiple iterations.",
+    challenge:
+      "Designing a scalable category system and ensuring seamless navigation between product types was challenging. Integrating third-party APIs for shipping and payment added complexity.",
     future_improvement:
-      "Add a user-friendly admin dashboard for product and order management. Implement advanced filtering and search features. Integrate a secure payment gateway. Add product reviews, wishlists, and better image optimization (e.g., lazy loading). Improve performance with pagination and use of caching strategies (e.g., Redis).",
+      "Add customer support chat and automated FAQs. Implement advanced product comparison and wishlists.",
   },
 ];
