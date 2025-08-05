@@ -39,9 +39,9 @@ function Home() {
         </div>
 
         <img
-          src="/profile.jpeg"
+          src="/21609 copy_1.JPG"
           alt=""
-          className="h-[400px] sm:w-[250px] md:w-[320px] sm:rotate-3 object-cover rounded-2xl"
+          className="h-full sm:h-[400px] sm:w-[250px] md:w-[320px] sm:rotate-3 object-cover object-top sm:object-center rounded-2xl"
         />
       </section>
     </header>
