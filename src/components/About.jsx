@@ -7,13 +7,13 @@ function About() {
       <h1 className="text-4xl mb-10 underline underline-offset-8 decoration-4 font-semibold mx-auto text-balance">
         About Me
       </h1>
-      <p>
+      <p className="leading-loose">
         I'm a passinate fullstack developer with a strong passion for learning
         and creating user-friendly websites and applications. I started coding a
         while ago, and since then, I've enjoyed the process of solving problems
         and seeing my ideas come to life through code.
       </p>
-      <p>
+      <p className="leading-loose">
         I'm comfortable working with technologies like{" "}
         <span className="text-white mr-1 font-medium">
           React, Next.js, Typescript, Javascript Redux, Firebase, Node.js,
@@ -25,7 +25,7 @@ function About() {
         I'm always eager to take on challenge that push me to grow as a
         developer.
       </p>
-      <p>
+      <p className="leading-loose">
         Outside of coding, I love playing sports such as football, which help me
         stay active and develop teamwork skills. I also enjoy painting, as it
         gives me a creative outlet and helps me think outside the box.

@@ -22,7 +22,7 @@ function Projects() {
                 alt={project.title}
                 className="w-full md:w-1/2 object-cover rounded-xl"
               />
-              <div className="my-3">
+              <div className="my-3 flex flex-col justify-between">
                 <h3 className="text-left font-semibold text-xl lg:text-2xl mb-5 hover:underline underline-offset-4 line-clamp-1">
                   {project.title}
                 </h3>

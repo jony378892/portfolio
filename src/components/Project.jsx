@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { projectsData } from "../assets/data";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -23,6 +23,18 @@ function Project() {
             alt={project.title}
             className="w-full rounded-xl mb-8 border border-white/10"
           />
+          <div className="flex gap-5 py-5 items-center justify-center">
+            <Link target="_blank" to={project.github}>
+              <button className="border border-white px-10 py-2 text-white/80 rounded-md cursor-pointer hover:bg-white hover:text-black font-semibold">
+                Github
+              </button>
+            </Link>
+            <Link target="_blank" to={project.live}>
+              <button className="border border-white px-10 py-2 text-white/80 rounded-md cursor-pointer hover:bg-white hover:text-black font-semibold">
+                Live
+              </button>
+            </Link>
+          </div>
           <h1 className="text-4xl font-bold mb-6 text-white">
             {project.title}
           </h1>

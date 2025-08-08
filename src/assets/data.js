@@ -1,5 +1,6 @@
 import demo1 from "../assets/demo/Screenshot From 2025-07-18 16-37-06.png";
 import demo2 from "../assets/demo/Screenshot From 2025-08-03 10-23-44.png";
+import demo3 from "../assets/demo/Screenshot From 2025-08-08 12-25-52.png";
 
 export const projectsData = [
   {
@@ -50,24 +51,24 @@ export const projectsData = [
   },
   {
     id: 3,
-    demo: demo1,
-    title: "Forever Clothing Store",
+    demo: demo3,
+    title: "Furniqo",
     description:
-      "Forever Clothing is your go-to destination for stylish and affordable fashion for kids of all ages. From trendy outfits for boys and girls to adorable essentials for babies and toddlers, we offer a curated collection designed for comfort, confidence, and everyday adventures. Discover seasonal must-haves, timeless classics, and playful pieces — all in one place. Dressing your little ones has never been this fun or easy.",
-    live: "https://forever-clothing-store.vercel.app/",
-    github: "https://github.com/jony378892/forever-store",
+      "Discover timeless style and everyday comfort with our curated collection of modern furniture. At Furniqo, we blend sleek design with quality craftsmanship to bring you furniture that transforms your space. Whether you're furnishing a cozy apartment or a spacious home, our range of sofas, chairs, tables, beds, and décor pieces is made to elevate your lifestyle.Shop online with confidence and enjoy fast shipping, easy returns, and exceptional customer service. Redefine your home with elegance, simplicity, and function—only at furniqo.",
+    live: "https://furniqa.vercel.app/",
+    github: "https://github.com/jony378892/furniqo",
     technology: [
-      "React",
-      "Express.js",
+      "Nextjs",
+      "Next API Route",
+      "Shadcn UI",
       "MongoDB",
       "Mongoose",
       "Node.js",
-      "React Router",
       "JWT",
     ],
     challenge:
-      "Implementing secure image uploads and storage, while keeping the site performant, was tricky. Handling edge cases in the checkout flow and payment integration required extensive testing.",
+      "Building the modern furniture store with Next.js was challenging. Creating responsive layouts with TailwindCSS, handling image scaling, and managing cart state using Context API and localStorage required extra effort. Integrating server-side rendering with MongoDB and deploying the full-stack app introduced issues like routing, environment variables, and CORS.",
     future_improvement:
-      "Enable guest checkout and social login options. Add support for multiple currencies and regional shipping rates.",
+      "Enable cutom image upload. So that user can choose their own product. Building a dedecated admin dashboard for product management are also on the roadmap to make the app more scalable.",
   },
 ];

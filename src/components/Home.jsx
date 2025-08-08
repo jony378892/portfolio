@@ -26,9 +26,16 @@ function Home() {
           </p>
 
           <div className="flex gap-5 mt-8 items-center">
-            <button className="flex items-center gap-2 bg-primary px-6 py-2 text-black rounded-lg font-semibold text-lg cursor-pointer">
-              Resume{" "}
-            </button>
+            <Link
+              target="_blank"
+              to="https://drive.google.com/file/d/1lvLuaEa2p4xAhpdtwluVvBiTkhjnoPw1/view?usp=sharing"
+            >
+              {" "}
+              <button className="flex items-center gap-2 bg-primary px-6 py-2 text-black rounded-lg font-semibold text-lg cursor-pointer">
+                Resume{" "}
+              </button>
+            </Link>
+
             <Link to="https://github.com/jony378892" target="_blank">
               <img src={githubLogo} alt="github" className="w-7 h-auto" />
             </Link>
