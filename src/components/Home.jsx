@@ -28,7 +28,7 @@ function Home() {
           <div className="flex gap-5 mt-8 items-center">
             <Link
               target="_blank"
-              to="https://drive.google.com/file/d/1lvLuaEa2p4xAhpdtwluVvBiTkhjnoPw1/view?usp=sharing"
+              to="https://drive.google.com/file/d/1djN5iGC1LTobb2qb2m2tZyHCLFKAky69/view?usp=sharing"
             >
               {" "}
               <button className="flex items-center gap-2 bg-primary px-6 py-2 text-black rounded-lg font-semibold text-lg cursor-pointer">
