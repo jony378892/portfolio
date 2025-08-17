@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <div
       id="home"
-      className="bg-black/30 text-white backdrop-blur-lg fixed top-0 inset-x-0 z-50"
+      className="bg-[#0a0a0a]/30 text-white backdrop-blur-lg fixed top-0 inset-x-0 z-50"
     >
       <nav className="flex items-center justify-between px-3 md:px-5 lg:px-0 py-5 max-w-4xl xl:max-w-5xl  mx-auto">
         <h1 className="text-3xl font-semibold text-white/80">

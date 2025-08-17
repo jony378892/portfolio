@@ -23,7 +23,7 @@ function Projects() {
                 className="w-full md:w-1/2 object-cover rounded-xl"
               />
 
-              <div className="my-3 flex flex-col justify-between">
+              <div className="md:w-1/2 my-3 flex flex-col justify-between">
                 <Link to={`/projects/${project.id}`}>
                   {" "}
                   <h3 className="text-left font-semibold text-xl lg:text-2xl mb-5 hover:underline underline-offset-4 line-clamp-1">
