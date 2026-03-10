@@ -21,8 +21,8 @@ function Home() {
           </h1>
           <h3 className="h-8 text-2xl font-semibold text-white">{text}</h3>
           <p className="max-w-md text-white/80 my-4 text-lg font-inter">
-            A Dhaka based fullstack developer passionate about buiding
-            accessible and user friendly website.
+            A fullstack developer passionate about buiding accessible and user
+            friendly website.
           </p>
 
           <div className="flex gap-5 mt-8 items-center">
