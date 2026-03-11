@@ -1,6 +1,6 @@
 import demo1 from "../assets/demo/Screenshot From 2025-07-18 16-37-06.png";
-import demo2 from "../assets/demo/Screenshot From 2025-08-03 10-23-44.png";
-import demo3 from "../assets/demo/Screenshot From 2025-08-08 12-25-52.png";
+import demo2 from "../assets/demo/Screenshot From 2026-03-11 22-00-33.png";
+import demo3 from "../assets/demo/Screenshot From 2026-03-11 23-13-25.png";
 
 export const projectsData = [
   {
@@ -28,16 +28,15 @@ export const projectsData = [
   {
     id: 2,
     demo: demo2,
-    title: "The Travel Blog",
+    title: "HomeNest Property",
     description:
-      "This is a personal travel blog web application built that designed to serve as a personal travel journal and a public-facing platform to share travel experiences, destination guides, and tips with a broader audience.",
-    live: "https://thetravelblog.vercel.app/",
-    github: "https://github.com/jony378892/thetravelguy",
+      "HomeNest is a real estate listing platform where property owners can post their available rentals or sale listings, and users can browse, search, and filter properties by location, price, or type.",
+    live: "https://homenest-property.vercel.app/",
+    github: "https://github.com/jony378892/homenest-client",
     technology: [
       "React",
       "tailwindCSS",
       "Typescript",
-      "Shadcn Ui",
       "Express.js",
       "MongoDB",
       "Mongoose",
@@ -52,11 +51,11 @@ export const projectsData = [
   {
     id: 3,
     demo: demo3,
-    title: "Furniqo",
+    title: "Fabrico",
     description:
-      "Discover timeless style and everyday comfort with our curated collection of modern furniture. At Furniqo, we blend sleek design with quality craftsmanship to bring you furniture that transforms your space. Whether you're furnishing a cozy apartment or a spacious home, our range of sofas, chairs, tables, beds, and décor pieces is made to elevate your lifestyle.Shop online with confidence and enjoy fast shipping, easy returns, and exceptional customer service. Redefine your home with elegance, simplicity, and function—only at furniqo.",
-    live: "https://furniqa.vercel.app/",
-    github: "https://github.com/jony378892/furniqo",
+      "Fabrico Client is a frontend for a garments e‑commerce marketplace. It supports three roles (admin, manager, buyer), product browsing, ordering, payment flows and dashboard pages for management and administration.",
+    live: "https://fabricoo.vercel.app/",
+    github: "https://github.com/jony378892/fabrico-client",
     technology: [
       "Nextjs",
       "Next API Route",
@@ -67,8 +66,8 @@ export const projectsData = [
       "JWT",
     ],
     challenge:
-      "Building the modern furniture store with Next.js was challenging. Creating responsive layouts with TailwindCSS, handling image scaling, and managing cart state using Context API and localStorage required extra effort. Integrating server-side rendering with MongoDB and deploying the full-stack app introduced issues like routing, environment variables, and CORS.",
+      "Building the modern furniture store with Next.js was challenging. Creating responsive layouts with TailwindCSS, handling imageWhile building the project, one of the main challenges was managing the application state while integrating multiple API calls. Ensuring that the UI remained synchronized with backend data required careful handling of asynchronous operations, loading states, and error handling. Another challenge was designing a scalable and maintainable frontend architecture. Organizing components, utilities, and services in a structured way took several iterations and refactoring to keep the code modular and easier to extend as the project grows. scaling, and managing cart state using Context API and localStorage required extra effort. Integrating server-side rendering with MongoDB and deploying the full-stack app introduced issues like routing, environment variables, and CORS.",
     future_improvement:
-      "Enable cutom image upload. So that user can choose their own product. Building a dedecated admin dashboard for product management are also on the roadmap to make the app more scalable.",
+      "In the future, the project can be improved by focusing on performance optimization, such as reducing unnecessary re-renders, implementing lazy loading for larger components, and optimizing API requests. Additionally, the user experience can be enhanced by adding stronger form validation, better error handling, and more responsive UI feedback to make the application more interactive and user-friendly.",
   },
 ];
